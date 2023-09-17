@@ -52,11 +52,89 @@ const Navbar = () => {
                 <span className="absolute top-0 -right-1 animate-pulse  rounded-full bg-red-400 h-2 w-2"></span>
               </button>
               <div className={`${ showMessage ? "hidden": "" } absolute -right-5 z-50 my-6 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600`}>
-                <ul className="py-2" aria-labelledby="user-menu-button">
+                <div className="px-4 py-3 w-80 flex justify-between items-center">
+                  <div className="text-sm font-medium text-gray-700 gap-1 dark:text-white flex items-center">
+                    <BiMessageAltDetail className="text-teal-500 text-lg" />
+                    <span>
+                      Message
+                    </span>
+                  </div>
+                  <a href="#" className="text-xs text-teal-400 hover:text-teal-500"> View All</a>
+                </div>
+                <ul className="py-2 divide-y divide-gray-100 max-h-[50vh] overflow-y-auto">
                   <li>
-                    <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                      <AiOutlineSetting className="me-2" />
-                      Settings
+                    <a href="#" className="flex gap-3 items-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                      <div className="flex-none text-sm bg-gray-800 rounded-full overflow-hidden">
+                        <img className="w-8 h-8 rounded-full" src="https://picsum.photos/200/200" alt="user photo" />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-gray-800 font-medium">Ramadhan Ikhsan</h5>
+                          <small className="text-gray-400">23 Min</small>
+                        </div>
+                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, labore.</p>
+                        <a href="#" className="mt-1 hover:text-teal-400 text-xs font-medium text-gray-600"> View Message</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex gap-3 items-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                      <div className="flex-none text-sm bg-gray-800 rounded-full overflow-hidden">
+                        <img className="w-8 h-8 rounded-full" src="https://source.unsplash.com/random/200x200?sig=1" alt="user photo" />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-gray-800 font-medium">Muhammad Arya</h5>
+                          <small className="text-gray-400">23 Min</small>
+                        </div>
+                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, labore.</p>
+                        <a href="#" className="mt-1 hover:text-teal-400 text-xs font-medium text-gray-600"> View Message</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex gap-3 items-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                      <div className="flex-none text-sm bg-gray-800 rounded-full overflow-hidden">
+                        <img className="w-8 h-8 rounded-full" src="https://source.unsplash.com/random/200x200?sig=3" alt="user photo" />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-gray-800 font-medium">Gilang Chandra</h5>
+                          <small className="text-gray-400">23 Min</small>
+                        </div>
+                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, labore.</p>
+                        <a href="#" className="mt-1 hover:text-teal-400 text-xs font-medium text-gray-600"> View Message</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex gap-3 items-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                      <div className="flex-none text-sm bg-gray-800 rounded-full overflow-hidden">
+                        <img className="w-8 h-8 rounded-full" src="https://source.unsplash.com/random/200x200?sig=2" alt="user photo" />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-gray-800 font-medium">Akbar Fajri</h5>
+                          <small className="text-gray-400">23 Min</small>
+                        </div>
+                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, labore.</p>
+                        <a href="#" className="mt-1 hover:text-teal-400 text-xs font-medium text-gray-600"> View Message</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex gap-3 items-start px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 duration-75 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                      <div className="flex-none text-sm bg-gray-800 rounded-full overflow-hidden">
+                        <img className="w-8 h-8 rounded-full" src="https://source.unsplash.com/random/200x200?sig=9" alt="user photo" />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                          <h5 className="text-gray-800 font-medium">Dimas Baam</h5>
+                          <small className="text-gray-400">23 Min</small>
+                        </div>
+                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, labore.</p>
+                        <a href="#" className="mt-1 hover:text-teal-400 text-xs font-medium text-gray-600"> View Message</a>
+                      </div>
                     </a>
                   </li>
                 </ul>
