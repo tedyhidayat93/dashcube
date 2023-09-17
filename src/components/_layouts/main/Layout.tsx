@@ -14,7 +14,6 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
-import FooterInfo from "./Footer/FooterInfo";
 import { useEffect, useState } from "react";
 
 

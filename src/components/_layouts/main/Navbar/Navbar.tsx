@@ -9,7 +9,6 @@ const Navbar = () => {
 
   const [showUser, setShowUser] = useState(true);
   const [showMessage, setShowMessage] = useState(true);
-  const [showNotification, setShowNotification] = useState(true);
 
   return (
   <>
