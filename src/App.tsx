@@ -1,4 +1,4 @@
-import './styles/main.css'
+import './styles/Main.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './components/_layouts/main/Layout';
 import Dashboard from './pages/dashboard/Dashboard';
